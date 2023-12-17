@@ -8,8 +8,11 @@ async function getTicket(id: number) {
   return res.json();
 }
 
-export default async function TicketDetails({ params }) {
-  // const id = params.id
+export default async function TicketDetails({
+  params,
+}: {
+  params: { id: number };
+}) {
   const ticket = await getTicket(params.id);
 
   return (
