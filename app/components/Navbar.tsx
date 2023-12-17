@@ -17,6 +17,7 @@ export default function Navbar() {
       <h1>Katana-Helpdesk</h1>
       <Link href="/">Dashboard</Link>
       <Link href="/tickets">Tickets</Link>
+      <Link href="/create">Tickets</Link>
     </nav>
   );
 }
